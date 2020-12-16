@@ -6,7 +6,7 @@ no_y=0;
 no_n=0;
 vet=[];
 mat_yes=[,];
-for cont=3:3
+for cont=1:30
     x=getfield(ground_truth_store,{cont},'ground_truth');
     y=getfield(ground_truth_store,{cont},'file');
 
@@ -147,7 +147,7 @@ for cont=3:3
                 mat_yes(cont,i)=1;
                 ini=ini(x(i,1):x(i,2),x(i,3):x(i,4));
                 tenente=imresize(ini,[440,336]);
-                figure,imshow(tenente);
+                %figure,imshow(tenente);
                 
                 
                 %figure,imshow(tenente);
